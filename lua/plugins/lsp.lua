@@ -7,7 +7,7 @@ return {
 			"neovim/nvim-lspconfig",
 		},
 		opts = {
-			ensure_installed = { "lua_ls", "clangd", "pyright", "bashls", "omnisharp", "jdtls", "jsonls" },
+			ensure_installed = { "lua_ls", "clangd", "pyright", "bashls", "omnisharp", "jdtls", "jsonls", "matlab_ls" },
 		},
 	},
 	{
