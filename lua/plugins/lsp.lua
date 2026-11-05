@@ -1,3 +1,13 @@
+-- Languages Supported:
+-- - Bash
+-- - C
+-- - C#
+-- - C++
+-- - Java
+-- - JSON
+-- - Lua
+-- - Python
+
 return {
 	{ "mason-org/mason.nvim", opts = {} },
 	{
@@ -7,7 +17,14 @@ return {
 			"neovim/nvim-lspconfig",
 		},
 		opts = {
-			ensure_installed = { "lua_ls", "clangd", "pyright", "bashls", "omnisharp", "jdtls", "jsonls", "matlab_ls" },
+			ensure_installed = { "lua_ls",
+			"bashls",
+			"clangd",
+			"jdtls",
+			"jsonls",
+			"omnisharp",
+			"pyright",
+			},
 		},
 	},
 	{
