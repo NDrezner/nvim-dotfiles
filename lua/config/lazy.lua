@@ -14,14 +14,33 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
--- Setup lazy.nvim
+local is_tty = vim.env.DISPLAY == nil and vim.env.WAYLAND_DISPLAY == nil
 require("lazy").setup({
 	spec = {
 		--import your plugins
 		{ import = "plugins" },
+	},
+	ui = {
+		icons = is_tty and {
+			cmd = "> ",
+			config = "* ",
+			event = "! ",
+			favorite = "* ",
+			ft = "- ",
+			init = "* ",
+			import = "< ",
+			keys = "# ",
+			lazy = "z ",
+			loaded = "+",
+			not_loaded = "-",
+			plugin = "+ ",
+			runtime = "~ ",
+			require = "@ ",
+			source = "$ ",
+			start = "> ",
+			task = "+ ",
+			list = { "-", ">", "*", "-" },
+		} or nil,
 	},
 	-- Colorscheme
 	install = { colorscheme = { "habmax" } },
