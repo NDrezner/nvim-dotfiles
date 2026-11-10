@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "gitsigns.nvim": { "branch": "main", "commit": "4bcd99167c265f135886b282baad77afe06206b2" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "3a5cd6d562a01f6829a35ae761dc383264ea452b" },
@@ -10,4 +11,7 @@
   "nvim-web-devicons": { "branch": "master", "commit": "ec309a0eaff6ea967e58c275996155ab5c16938d" },
   "plenary.nvim": { "branch": "master", "commit": "74b06c6c75e4eeb3108ec01852001636d85a932b" },
   "vim-fugitive": { "branch": "master", "commit": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0" }
+=======
+  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" }
+>>>>>>> origin/main
 }
