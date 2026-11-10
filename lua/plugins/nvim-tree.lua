@@ -7,7 +7,7 @@ return {
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
 
-		local is_tty = vim.env.TERM == "linux"
+		local is_tty = vim.env.DISPLAY == nil and vim.env.WAYLAND_DISPLAY == nil
 
 		require("nvim-tree").setup({
 			renderer = {
